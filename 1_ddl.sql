@@ -31,7 +31,7 @@ create table member(
     age int,
     gender varchar(2) not null,
     email varchar(50),
-    promotion varchar(2)
+    promotion varchar(2) default 'x'
 );
 
 alter table member drop column age;

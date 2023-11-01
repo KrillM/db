@@ -17,7 +17,7 @@ create user 'user'@'%' identified by '1234';
 grant all privileges on *.* to 'user'@'%' with grant option;
 flush privileges;
 
-alter user 'user'@'%' identified with mysql_native_password by '1234qwer*';
+alter user 'user'@'%' identified with mysql_native_password by '';
 
 select host, user from mysql.user;
 
